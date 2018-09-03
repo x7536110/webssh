@@ -10,6 +10,7 @@ const sshConfig = require('./sshConfig')
 let app = express()
 
 let distpath = path.join(__dirname, '/xterm/dist');
+
 app.use('/', express.static(distpath));
 
 let server = http.createServer(app);
@@ -53,8 +54,8 @@ io.on('connection', (socket) => {
         socket.emit('data', '\r\n*** SSH CONNECTION ERROR: ' + err.message + ' ***\r\n');
     });
 
-
     ssh.connect(sshConfig);
+
 });
 
 

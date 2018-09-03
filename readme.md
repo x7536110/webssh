@@ -13,4 +13,8 @@ Node v8.x or above.
 3. Run `npm start`.
 4. Fire up a browser, navigate to IP/port of your choice and specify a host, like: `http://localhost:8080`
 
+## Preview
+
+![preview](./preview.gif)
+
 ## enjoy:)
